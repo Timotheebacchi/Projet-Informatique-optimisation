@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Choix des projets d'info</title>
-    <!--link rel="stylesheet" href="styles.css">  lien vers le fichier css pour l'instant inexistant-->
+    <title>Choix des projets d'info</title>
+    <script src="../static/Username.js"></script>
 </head>
-
 <body>
-    <form action="Choice_Page.html" method="get">
+    <form id="myForm">
         <label for="nom">Saisissez votre nom : </label>
-        <input type="text" id="nom" required>
+        <input type="text" id="nom" name="nom" required>
         <br>
-        <label for="prenom">Saisissez votre prénom :</label>
-        <input type="text" id="prenom" required>
+        <label for="prenom">Saisissez votre prénom : </label>
+        <input type="text" id="prenom" name="prenom" required>
         <br>
-        <input type="submit" value="Valider">
+        <button type="button" onclick="redirectUser()">Valider</button>
     </form>
 </body>
+</html>
