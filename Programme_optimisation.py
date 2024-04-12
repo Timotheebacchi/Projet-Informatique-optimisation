@@ -1,13 +1,7 @@
-import gurobipy as gp
-from gurobipy import *
-import pandas as pd
-import csv
 
-
-
-
-
-donnees = pd.read_csv('choix_élèves_projet.csv')
+from gurobipy import multidict, Model, GRB
+import pandas as pd 
+donnees = pd.read_csv('choix_eleves_projet.csv')
 
 # Préparation des données pour le multidict
 combinaisons = {}  # Clés pour les combinaisons élève-projet
@@ -26,7 +20,7 @@ for index, ligne in donnees.iterrows():
         # On crée une clé unique pour chaque combinaison élève-projet
         cle = (eleve, projet.strip())  # Supprime les espaces inutiles
         # On ajoute la clé dans le dictionnaire des combinaisons
-        combinaisons[cle] = None
+        combinaisons[cle] = None 
         
         # On associe le score correspondant au choix dans le dictionnaire des scores
         scores[cle] = scores_choix.get(choix, 0)
@@ -43,11 +37,11 @@ vars = m.addVars(combinaisons, vtype=GRB.BINARY, name="assignation")
 # Ajout des contraintes
 # Chaque élève est assigné à exactement un projet
 for eleve in set(eleve for (eleve, projet) in combinaisons):
-    m.addConstr(sum(vars[eleve, projet] for projet in projets if (eleve, projet) in vars) == 1, f"ContrainteUnProjet_{eleve}")
+    m.addConstr(sum(vars[eleve, projet] for projet in projets_choisis if (eleve, projet) in vars) == 1, f"ContrainteUnProjet_{eleve}")
 
 # Chaque projet a un nombre maximum de participants que je fixe pour l'instant à 5
 for projet in set(projet for (eleve, projet) in combinaisons):
-    m.addConstr(sum(vars[eleve, projet] for eleve in eleves if (eleve, projet) in vars) <= 5, f"ContrainteMaxParticipants_{projet}")
+    m.addConstr(sum(vars[eleve, projet] for eleve in eleve if (eleve, projet) in vars) <= 5, f"ContrainteMaxParticipants_{projet}")
 
 # Je veux maximiser le score total mais peut être pas le mieux (?) pourquoi pas plutôt avec un bien être moye meilleur, à voir avec valroy
 m.setObjective(sum(vars[eleve, projet] * scores[eleve, projet] for eleve, projet in combinaisons), GRB.MAXIMIZE)
