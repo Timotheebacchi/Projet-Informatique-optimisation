@@ -1,0 +1,19 @@
+/* style.css */
+.draggable {
+  padding: 5px 10px;
+  background-color: #b4d3e7;
+  border-radius: 5px;
+  cursor: move; /* Curseur indiquant qu'on peut déplacer */
+  margin: 5px;
+  display: inline-block;
+}
+
+.droppable {
+  display: inline-block;
+  min-width: 60px;
+  border-bottom: 2px dashed #666;
+}
+
+.draggable.over {
+  border: 2px dashed #000;
+}

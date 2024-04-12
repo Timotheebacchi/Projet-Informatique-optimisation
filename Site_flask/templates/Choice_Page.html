@@ -4,24 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Choix des projets d'info</title>
-    <!--link rel="stylesheet" href="styles.css">  lien vers le fichier css pour l'instant inexistant-->
+    <link rel="stylesheet" href="../static/Choice_Page.css" />
+    <script src="../static/Choice_Page.js"></script>
 </head>
 <body>
     <h1> Liste des projets </h1>
-    <ol>
-        <li><a href="Presentation.html" target="blank">Premier Projet</a></li>
-        <li><a href="https://www.minesparis.psl.eu" target="blank">Deuxième Projet</a></li>
-        <li><a href="" target="blank">Troisième Projet</a></li>
-    </ol>
+    <ol id="projectlist"></ol>
     <h1> Vos choix </h1>
-    <h3> Premier Favori </h3>
-    <form method="get">
-        <input type="radio" id="proj1" name="fav1">
-        <label for="proj1">Projet 1</label><br>
-        <input type="radio" id="proj2" name="fav1">
-        <label for="proj2">Projet 2</label><br>
-        <input type="radio" id="proj3" name="fav1">
-        <label for="proj3">Projet 3</label><br>
-        <input type="submit" value="Valider">
-    </form>
+    <button id="validationButton">Valider</button>
+    <div id="sentences">
+        <p>
+          Choix 1 : <span class="droppable" id="hole1">[_______]</span> <br>
+          Choix 2 : <span class="droppable" id="hole2">[_______]</span> <br>
+          Choix 3 : <span class="droppable" id="hole3">[_______]</span> <br>
+          Choix 4 : <span class="droppable" id="hole4">[_______]</span> <br>
+          Choix 5 : <span class="droppable" id="hole5">[_______]</span> <br>
+        </p>
+    </div>
+
+    <div id="words"></div>
+
+    <script>
+        var liste = [["name"], ["name","https://www.minesparis.psl.eu"], ["name"]];
+
+        var output = document.getElementById("projectlist");
+        for (var i = 0; i < liste.length; i++) {
+            var linkItem = document.createElement("a"); 
+            linkItem.textContent = "Projet "+(i+1)+" : "+liste[i][0];
+            linkItem.href = liste[i][1];
+            linkItem.target = "_blank";
+            output.appendChild(linkItem); 
+            output.appendChild(document.createElement("br"));
+        }
+        var wordsContainer = document.getElementById("words");
+        for (var i = 0; i < liste.length; i++) {
+            var block = document.createElement("div");
+            block.classList.add("draggable");
+            block.setAttribute("draggable", "true");
+            block.id = "block" + (i + 1);
+            block.textContent = "Projet "+(i+1)+" : "+liste[i][0];
+            wordsContainer.appendChild(block);
+        }
+    </script>
 </body>
