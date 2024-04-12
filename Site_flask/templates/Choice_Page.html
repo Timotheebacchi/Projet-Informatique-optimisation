@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Choix des projets d'info</title>
+    <script src="../static/Choice_Page.js"></script>
     <!--link rel="stylesheet" href="styles.css">  lien vers le fichier css pour l'instant inexistant-->
 </head>
 <body>
@@ -14,14 +15,17 @@
         <li><a href="" target="blank">Troisième Projet</a></li>
     </ol>
     <h1> Vos choix </h1>
-    <h3> Premier Favori </h3>
-    <form method="get">
-        <input type="radio" id="proj1" name="fav1">
-        <label for="proj1">Projet 1</label><br>
-        <input type="radio" id="proj2" name="fav1">
-        <label for="proj2">Projet 2</label><br>
-        <input type="radio" id="proj3" name="fav1">
-        <label for="proj3">Projet 3</label><br>
-        <input type="submit" value="Valider">
-    </form>
+    <div id="words">
+        <!-- Éléments déplaçables -->
+        <div class="draggable" draggable="true" id="block1">Projet1</div>
+        <div class="draggable" draggable="true" id="block2">Projet2</div>
+        <div class="draggable" draggable="true" id="block3">Projet3</div>
+    </div>
+    <div id="sentences">
+        <p>
+          Choix 1 : <span class="droppable" id="hole1">[_______]</span> <br>
+          Choix 2 : <span class="droppable" id="hole2">[_______]</span> <br>
+          Choix 3 : <span class="droppable" id="hole3">[_______]</span> <br>
+        </p>
+    </div>
 </body>
