@@ -38,13 +38,13 @@ def teach1() :
 @app.route("/Teacher2")
 def teach2() :
     # content est la chaine de caractères html
-    return render_template("Teacher2.html",content="")
+    return render_template("Teacher2.html",content="bonjour")
 
 liste = [["a"],["b","lien.fr"],["c"]]
 
 @app.route("/Choice_Page")
 def choi() :
-    return render_template("Choices.html",choices=str(liste))
+    return render_template("Choice_Page.html",choices=str(liste))
 
 if __name__ == "__main__":
     app.run(debug=True)
