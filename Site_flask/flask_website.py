@@ -7,12 +7,6 @@ app.secret_key = 'key'
 def user():
     return render_template("Username.html")
 
-@app.route("/pass")
-def password():
-    #fonction check_password
-
-    return render_template("Pass.html")
-
 @app.route("/check_username", methods=["POST"])
 def check_username() :
     nom = request.form["nom"]
