@@ -10,6 +10,7 @@ def user():
 @app.route("/pass")
 def password():
     #fonction check_password
+
     return render_template("Pass.html")
 
 @app.route("/check_username", methods=["POST"])
@@ -23,6 +24,13 @@ def check_username() :
         session["prenom"] = prenom
         session["connecte"] = "eleve"
         return render_template("Choice_Page.html")
+
+@app.route("/check_pass", methods=["POST"])
+def check_pass() :
+    pword = request.form["motdepasse"]
+    if pword == "7LcN8R3k84qceJ" :
+        session["connecte"] = "prof"
+        return render_template("Teacher1.html")
 
 @app.route("/save_choice", methods = ['POST'])
 def save() :

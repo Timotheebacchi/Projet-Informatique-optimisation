@@ -4,14 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verification</title>
-    <!--link rel="stylesheet" href="styles.css">  lien vers le fichier css pour l'instant inexistant-->
-    <script src="../static/Pass.js"></script>
 </head>
 <body>
-    <form id="myForm">
+    <form id="myForm" action="/check_pass" method="post">
         <label for="motdepasse">Saisissez le mot de passe : </label>
         <input type="text" id="motdepasse" name="motdepasse" required>
         <br>
-        <button type="button" onclick="redirectUser()">Valider</button>
+        <input type="submit">Valider</input>
     </form>
 </body>
