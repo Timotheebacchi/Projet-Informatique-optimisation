@@ -11,7 +11,7 @@
     <h1> Liste des projets </h1>
     <ol id="projectlist"></ol>
     <h1> Vos choix </h1>
-    <button id="validationButton">Valider</button>
+    <button id="validationButton" onclick="send_choice()">Valider</button>
     <div id="sentences">
         <p>
           Choix 1 : <span class="droppable" id="hole1">[_______]</span> <br>
@@ -25,25 +25,26 @@
     <div id="words"></div>
 
     <script>
-        var liste = [["name"], ["name","https://www.minesparis.psl.eu"], ["name"]];
+    var liste = {{choices}};
 
-        var output = document.getElementById("projectlist");
-        for (var i = 0; i < liste.length; i++) {
-            var linkItem = document.createElement("a"); 
-            linkItem.textContent = "Projet "+(i+1)+" : "+liste[i][0];
-            linkItem.href = liste[i][1];
-            linkItem.target = "_blank";
-            output.appendChild(linkItem); 
-            output.appendChild(document.createElement("br"));
-        }
-        var wordsContainer = document.getElementById("words");
-        for (var i = 0; i < liste.length; i++) {
-            var block = document.createElement("div");
-            block.classList.add("draggable");
-            block.setAttribute("draggable", "true");
-            block.id = "block" + (i + 1);
-            block.textContent = "Projet "+(i+1)+" : "+liste[i][0];
-            wordsContainer.appendChild(block);
-        }
+    var output = document.getElementById("projectlist");
+    for (var i = 0; i < liste.length; i++) {
+        var linkItem = document.createElement("a"); 
+        linkItem.textContent = "Projet "+(i+1)+" : "+liste[i][0];
+        linkItem.href = liste[i][1];
+        linkItem.target = "_blank";
+        output.appendChild(linkItem); 
+        output.appendChild(document.createElement("br"));
+    }
+    var wordsContainer = document.getElementById("words");
+    for (var i = 0; i < liste.length; i++) {
+        var block = document.createElement("div");
+        block.classList.add("draggable");
+        block.setAttribute("draggable", "true");
+        block.id = "block" + (i + 1);
+        block.textContent = "Projet "+(i+1)+" : "+liste[i][0];
+        block.value = liste[i][0]
+        wordsContainer.appendChild(block);
+    }
     </script>
 </body>

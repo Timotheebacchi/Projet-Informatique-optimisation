@@ -1,4 +1,3 @@
-
 from gurobipy import multidict, Model, GRB
 import pandas as pd 
 donnees = pd.read_csv('choix_eleves_projet.csv')

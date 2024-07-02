@@ -4,17 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Choix des projets d'info</title>
-    <script src="../static/Username.js"></script>
 </head>
 <body>
-    <form id="myForm">
+    <form id="myForm" action="/check_username" method="post">
         <label for="nom">Saisissez votre nom : </label>
         <input type="text" id="nom" name="nom" required>
         <br>
         <label for="prenom">Saisissez votre prénom : </label>
         <input type="text" id="prenom" name="prenom" required>
         <br>
-        <button type="button" onclick="redirectUser()">Valider</button>
+        <input type="submit">Valider</input>
     </form>
 </body>
 </html>
