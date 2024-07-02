@@ -40,7 +40,7 @@ def teach2() :
     # content est la chaine de caractères html
     return render_template("Teacher2.html",content="bonjour")
 
-liste = [["a"],["b","lien.fr"],["c"]]
+liste = [["a"],["b","https://www.minesparis.psl.eu"],["c"]]
 
 @app.route("/Choice_Page")
 def choi() :
