@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, redirect, session
+import pandas as pd
 
 app = Flask(__name__)
 app.secret_key = 'key'
