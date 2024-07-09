@@ -1,13 +1,13 @@
 from flask import Flask, render_template, request, redirect, session
 import pandas as pd
 import csv
+
 app = Flask(__name__)
 app.secret_key = 'key'
 
 liste = [["a"],["b","https://www.minesparis.psl.eu"],["c"],["d"]]
 
 @app.route("/")
-
 
 def user():
     return render_template("Username.html")
