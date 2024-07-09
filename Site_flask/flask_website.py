@@ -4,7 +4,7 @@ import pandas as pd
 app = Flask(__name__)
 app.secret_key = 'key'
 
-liste = [["a"],["b","https://www.minesparis.psl.eu"],["c"]]
+liste = [["a"],["b","https://www.minesparis.psl.eu"],["c"],["d"]]
 
 @app.route("/")
 def user():
@@ -34,8 +34,8 @@ def save() :
     request.json #<- dictionnaire qui contient les choix
     session #<- dictionnaire de l'identité
 
-@app.route("/Teacher")
-def teach() :
+@app.route("/runcode", methods = ['POST'])
+def run() :
     return render_template("Teacher.html")
 
 if __name__ == "__main__":
