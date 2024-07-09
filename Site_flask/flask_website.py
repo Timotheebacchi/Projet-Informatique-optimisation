@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, redirect, session
 import pandas as pd
 import csv
+import Programme_optimisation as po
 
 app = Flask(__name__)
 app.secret_key = 'key'
@@ -48,6 +49,7 @@ def save() :
 
 @app.route("/runcode", methods = ['POST'])
 def run() :
+    po.main()
     return render_template("Teacher.html")
 
 if __name__ == "__main__":
