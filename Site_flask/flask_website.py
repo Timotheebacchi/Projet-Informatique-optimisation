@@ -33,15 +33,13 @@ def check_pass() :
 
 @app.route("/save_choice", methods = ['POST'])
 def save() :
-    request.json #<- dictionnaire qui contient les choix
+    d = request.json #<- dictionnaire qui contient les choix
     session #<- dictionnaire de l'identité
-    def save():
-    # Assurez-vous que 'request' et 'session' sont correctement initialisés et utilisés
     fichier_csv = 'choix_eleves_projet.csv'
     with open(fichier_csv, mode='a', newline='') as file:
         writer = csv.writer(file, delimiter=';', quotechar='"', quoting=csv.QUOTE_MINIMAL)
         # Création d'une liste pour les valeurs de request.json
-        valeurs_json = [request.json.get(str(i)) for i in range(1, 5)]
+        valeurs_json = [d.get(str(i)) for i in range(1, 5)]
         # Concaténation des valeurs avec un séparateur ";"
         valeurs_concatenees = ";".join(valeurs_json)
         # Écriture dans le fichier CSV
