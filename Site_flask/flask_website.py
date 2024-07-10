@@ -28,14 +28,13 @@ def check_username() :
 @app.route("/check_pass", methods=["POST"])
 def check_pass() :
     pword = request.form["motdepasse"]
-    if pword == "7LcN8R3k84qceJ" :
+    if pword == "mines" :
         session["connecte"] = "prof"
         return render_template("Teacher.html")
 
 @app.route("/save_choice", methods = ["POST"])
 def save_choice() :
     d = request.json #<- dictionnaire qui contient les choix
-    print(d)
     fichier_csv = 'choix_eleves_projet.csv'
     with open(fichier_csv, mode='a', newline='') as file:
         writer = csv.writer(file, delimiter=';', quotechar='"', quoting=csv.QUOTE_MINIMAL)
@@ -45,11 +44,15 @@ def save_choice() :
         valeurs_concatenees = ";".join(valeurs_json)
         # Écriture dans le fichier CSV
         writer.writerow([session.get('prénom', '') + " " + session.get('nom', ''), valeurs_concatenees])
-    return render_template("Teacher.html")
+    return redirect("Saved", code=302)
+
+@app.route("/Saved", methods = ['GET'])
+def res() :
+    return render_template("Saved.html")
 
 @app.route("/runcode", methods = ['POST'])
 def run() :
-    l = po.main()
+    l = ["toto"]
     return render_template("Results.html",result=l)
 
 if __name__ == "__main__":
