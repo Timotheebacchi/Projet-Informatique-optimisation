@@ -6,7 +6,7 @@ import Programme_optimisation as po
 app = Flask(__name__)
 app.secret_key = 'key'
 
-liste = [["a"],["b","https://www.minesparis.psl.eu"],["c"],["d"]]
+liste = [["a"],["b","https://www.minesparis.psl.eu"],["c"],["d"],["e"],["f"]]
 
 @app.route("/")
 
@@ -49,8 +49,8 @@ def save() :
 
 @app.route("/runcode", methods = ['POST'])
 def run() :
-    po.main()
-    return render_template("Teacher.html")
+    l = po.main()
+    return render_template("Results.html",result=l)
 
 if __name__ == "__main__":
     app.run(debug=True)

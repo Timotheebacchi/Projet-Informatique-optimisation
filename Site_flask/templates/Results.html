@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Results</title>
+</head>
+<body>
+    <ol id="resultlist"></ol>
+    <script>
+        var liste = {{ result|tojson }};
+        
+        var output = document.getElementById("resultlist");
+        for (var i = 0; i < liste.length; i++) {
+            var linkItem = document.createElement("a"); 
+            linkItem.textContent = liste[i];
+            output.appendChild(linkItem); 
+            output.appendChild(document.createElement("br"));
+        }
+    </script>
+</body>
+</html>
