@@ -6,7 +6,7 @@ import Programme_optimisation as po
 app = Flask(__name__)
 app.secret_key = 'key'
 
-liste = [["a"],["b","https://www.minesparis.psl.eu"],["c"],["d"],["e"],["f"]]
+liste = [["puzzle","https://fr.wikipedia.org/wiki/Puzzle"],["sursaut-gamma","https://fr.wikipedia.org/wiki/Sursaut_gamma"],["democratie","https://fr.wikipedia.org/wiki/Démocratie"],["vieillissement-mouche","https://fr.wikipedia.org/wiki/Mouche"],["cristal","https://fr.wikipedia.org/wiki/Cristal"],["mines-paris","https://www.minesparis.psl.eu"]]
 
 @app.route("/")
 
