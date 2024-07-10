@@ -32,10 +32,10 @@ def check_pass() :
         session["connecte"] = "prof"
         return render_template("Teacher.html")
 
-@app.route("/save_choice", methods = ['POST'])
-def save() :
+@app.route("/save_choice", methods = ["POST"])
+def save_choice() :
     d = request.json #<- dictionnaire qui contient les choix
-    session #<- dictionnaire de l'identité
+    print(d)
     fichier_csv = 'choix_eleves_projet.csv'
     with open(fichier_csv, mode='a', newline='') as file:
         writer = csv.writer(file, delimiter=';', quotechar='"', quoting=csv.QUOTE_MINIMAL)
@@ -45,7 +45,7 @@ def save() :
         valeurs_concatenees = ";".join(valeurs_json)
         # Écriture dans le fichier CSV
         writer.writerow([session.get('prénom', '') + " " + session.get('nom', ''), valeurs_concatenees])
-    return "Choix enregistrés"
+    return render_template("Teacher.html")
 
 @app.route("/runcode", methods = ['POST'])
 def run() :
