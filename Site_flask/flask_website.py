@@ -52,7 +52,7 @@ def res() :
 
 @app.route("/runcode", methods = ['POST'])
 def run() :
-    l = ["toto"]
+    l = po.main()
     return render_template("Results.html",result=l)
 
 if __name__ == "__main__":
