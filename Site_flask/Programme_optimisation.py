@@ -3,7 +3,7 @@ from gurobipy import multidict, Model, GRB
 import pandas as pd 
 
 def main():
-    donnees = pd.read_csv('choix_eleves_projet.csv',sep = ';')
+    donnees = pd.read_csv('choix_eleves_projet_test.csv',sep = ';')
 
     # Préparation des données pour le multidict
     combinaisons = {}  # Clés pour les combinaisons élève-projet
@@ -16,14 +16,15 @@ def main():
     for index, ligne in donnees.iterrows():
         eleve = ligne['eleves']
         liste_projets = donnees['liste_projets']
-
+        
         for projet in liste_projets:
             # On crée une clé unique pour chaque combinaison élève-projet
             cle = (eleve, projet)  
             # On ajoute la clé dans le dictionnaire des combinaisons
             combinaisons[cle] = None 
             scores[cle] = 0
-            projets_choisis = ligne['choix_projets'].split(';')  #split pour séparer les choix et les mettre dans une liste
+            projets_choisis = str(ligne['choix_projets']).split(';')  #split pour séparer les choix et les mettre dans une liste
+            print(projets_choisis)
         for choix, projets in enumerate(projets_choisis, start=1):
                 # On associe le score correspondant au choix dans le dictionnaire des scores
                 cle_choix = (eleve, projets)
@@ -74,11 +75,10 @@ def main():
             if var.x > 0.5:  # Utiliser 0.5 comme seuil pour les variables binaires
                 eleve, projet = cle
                 score = scores[cle]  # Récupérer le score de la combinaison à partir du dictionnaire des scores
-               
+                
                 Liste_renvoyée.append(eleve +  " est assigné au " +   projet + " avec un score de " +  str(score))
 
     return Liste_renvoyée
-
 
 
 

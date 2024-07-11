@@ -43,7 +43,7 @@ def check_pass() :
 @app.route("/save_choice", methods = ["POST"])
 def save_choice() :
     d = request.json #<- dictionnaire qui contient les choix
-    fichier_csv = 'choix_eleves_projet.csv'
+    fichier_csv = 'choix_eleves_projet_test.csv'
     with open(fichier_csv, mode='a', newline='') as file:
         writer = csv.writer(file, delimiter=';', quotechar='"', quoting=csv.QUOTE_MINIMAL)
      
