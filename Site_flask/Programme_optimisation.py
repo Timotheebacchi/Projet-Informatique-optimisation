@@ -10,7 +10,7 @@ def main():
     scores = {}        # Valeurs pour les scores correspondants
 
     # Score attribué à chaque choix on pourra changer plus tard en fonction ,j'ai mis des scores linéaires, ce n'est pas nécéssairement le meilleure choix, on pourras faire une échelle de satisfaction intégrée
-    scores_choix = { 0: 100, 1: 80, 2: 60, 3: 40, 4: 20}
+    scores_choix = { 1: 100, 2: 80, 3: 60, 4: 40, 5: 20}
 
     # Remplissage des dictionnaires
     for index, ligne in donnees.iterrows():
@@ -74,13 +74,16 @@ def main():
             if var.x > 0.5:  # Utiliser 0.5 comme seuil pour les variables binaires
                 eleve, projet = cle
                 score = scores[cle]  # Récupérer le score de la combinaison à partir du dictionnaire des scores
-                print(f" {eleve} est assigné au  {projet} avec un score de {score}")
-                Liste_renvoyée.append(f" {eleve} est assigné au  {projet} avec un score de {score}")
+               
+                Liste_renvoyée.append(eleve +  " est assigné au " +   projet + " avec un score de " +  str(score))
 
     return Liste_renvoyée
 
 
+L = main()
 
+for i in L :
+    print(i)
         
 
 
