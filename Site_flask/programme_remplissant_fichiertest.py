@@ -6,6 +6,7 @@ listproj = ["glaciaire","jaugeages","montchauvel","MDE-réseau-qgis","democratie
         "germain-maureau","kleep","sursaut-gamma","engie-profiling","engie-actif","cbio-visu","keolis-offre","keolis-autonomie","scintigraphie3","datapred",
         "alumni-identifiant","puzzle","methane1","methane2","ocde-empreinte","chu-centrale-appel","pictet-trading-strategie","pictet-forecasting","vieillissement-mouche","scanner-low-cost","cristal"]
 n = len(listproj)
+listel = ["David Abulius","Valentin Allard","Amine Amzai","Gaspard Aractingi"]
 
 
 with open(fichier_csv, mode='w', newline='') as file:
