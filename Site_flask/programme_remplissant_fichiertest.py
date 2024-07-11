@@ -16,10 +16,10 @@ with open(fichier_csv, mode='w', newline='') as file:
         writer = csv.writer(file, delimiter=';', quotechar='"', quoting=csv.QUOTE_MINIMAL)
         writer.writerow(['eleves', 'choix_projets','liste_projets'])
 
-        for i in range(n):
+        for i in range(min(n,len(listel))):
                 writer.writerow([])
-                writer.writerow(['eleve' + str(i),listproj[random.randint(0, n-1)] + ";" + listproj[random.randint(0, n-1)] + ";" +  listproj[random.randint(0, n-1)] + ";" + listproj[random.randint(0, n-1)] + ";" + listproj[random.randint(0, n-1)],listproj[i]])
+                writer.writerow([listel[i],listproj[random.randint(0, n-1)] + ";" + listproj[random.randint(0, n-1)] + ";" +  listproj[random.randint(0, n-1)] + ";" + listproj[random.randint(0, n-1)] + ";" + listproj[random.randint(0, n-1)],listproj[i]])
 
-        for j in range(n,100):
+        for j in range(n,len(listel)):
                 writer.writerow([])
-                writer.writerow(['eleve' + str(j),listproj[random.randint(0, n-1)] + ";" + listproj[random.randint(0, n-1)] + ";" +  listproj[random.randint(0, n-1)] + ";" + listproj[random.randint(0, n-1)] + ";" + listproj[random.randint(0, n-1)]])
+                writer.writerow([listel(i),listproj[random.randint(0, n-1)] + ";" + listproj[random.randint(0, n-1)] + ";" +  listproj[random.randint(0, n-1)] + ";" + listproj[random.randint(0, n-1)] + ";" + listproj[random.randint(0, n-1)]])
