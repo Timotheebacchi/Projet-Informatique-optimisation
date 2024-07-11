@@ -80,10 +80,6 @@ def main():
     return Liste_renvoyée
 
 
-L = main()
 
-for i in L :
-    print(i)
-        
 
 

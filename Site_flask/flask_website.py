@@ -38,12 +38,16 @@ def save_choice() :
     fichier_csv = 'choix_eleves_projet.csv'
     with open(fichier_csv, mode='a', newline='') as file:
         writer = csv.writer(file, delimiter=';', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-        # Création d'une liste pour les valeurs de request.json
-        valeurs_json = [d.get(str(i)) for i in range(1, 5)]
+     
         # Concaténation des valeurs avec un séparateur ";"
-        valeurs_concatenees = ";".join(valeurs_json)
+        valeurs_concatenees = ";".join(d[str(i)] for i in range(1,6))
+
+        #passage à la ligne
+
+
         # Écriture dans le fichier CSV
-        writer.writerow([session.get('prénom', '') + " " + session.get('nom', ''), valeurs_concatenees])
+        writer.writerow([])
+        writer.writerow([session["nom"] + " " + session["prenom"], valeurs_concatenees])
     return redirect("Saved", code=302)
 
 @app.route("/Saved", methods = ['GET'])
