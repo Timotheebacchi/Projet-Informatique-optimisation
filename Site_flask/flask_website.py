@@ -6,7 +6,15 @@ import Programme_optimisation as po
 app = Flask(__name__)
 app.secret_key = 'key'
 
-liste = [["puzzle","https://fr.wikipedia.org/wiki/Puzzle"],["sursaut-gamma","https://fr.wikipedia.org/wiki/Sursaut_gamma"],["democratie","https://fr.wikipedia.org/wiki/Démocratie"],["vieillissement-mouche","https://fr.wikipedia.org/wiki/Mouche"],["cristal","https://fr.wikipedia.org/wiki/Cristal"],["mines-paris","https://www.minesparis.psl.eu"]]
+liste = [["glaciaire","https://fr.wikipedia.org/wiki/Glacier_(métier)"],
+    ["jaugeages","https://fr.wikipedia.org/wiki/Jauge"],
+    ["mont chauvel","https://fr.mappy.com/poi/5f72fe085e26a26ef844c1a2"],
+    ["puzzle","https://fr.wikipedia.org/wiki/Puzzle"],
+    ["sursaut-gamma","https://fr.wikipedia.org/wiki/Sursaut_gamma"],
+    ["democratie","https://fr.wikipedia.org/wiki/Démocratie"],
+    ["vieillissement-mouche","https://fr.wikipedia.org/wiki/Mouche"],
+    ["cristal","https://fr.wikipedia.org/wiki/Cristal"],
+    ["mines-paris","https://www.minesparis.psl.eu"]]
 
 @app.route("/")
 
