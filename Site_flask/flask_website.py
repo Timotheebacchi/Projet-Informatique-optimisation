@@ -55,6 +55,7 @@ def save_choice() :
 
         # Écriture dans le fichier CSV
         writer.writerow([])
+        
         writer.writerow([session["nom"] + " " + session["prenom"], valeurs_concatenees])
     return redirect("Saved", code=302)
 

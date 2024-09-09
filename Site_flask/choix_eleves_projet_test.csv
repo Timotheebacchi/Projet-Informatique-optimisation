@@ -1,47 +1,261 @@
 eleves;choix_projets;liste_projets
-
-David Abulius;"scintigraphie2;scanner-low-cost;mines-paris;glaciaire;montchauvel";glaciaire
-
-Valentin Allard;"methane1;methane2;cristal;e-cube-linky;mines-paris";jaugeages
-
-Amine Amzai;"scanner-low-cost;puzzle;e-cube-linky;MDE-réseau-qgis;scintigraphie3";montchauvel
-
-Gaspard Aractingi;"glaciaire;scintigraphie3;keolis-autonomie;scanner-low-cost;montchauvel";MDE-réseau-qgis
-
-Nejma Araki;"cristal;mines-paris;scanner-low-cost;MDE-réseau-qgis;pictet-forecasting";democratie
-
-Baptiste Auscher;"methane2;methane1;democratie;mines-paris;keolis-autonomie";resan-tracabilité
-
-Madeleine Banessy;"germain-maureau;MDE-réseau-qgis;germain-maureau;ocde-empreinte;coenergy";scintigraphie1
-
-Mathis Bardot;"datapred;MDE-réseau-qgis;MDE-réseau-qgis;cbio-visu;friend-concept";scintigraphie2
-
-Yannis Baron;"scanner-low-cost;MDE-réseau-qgis;engie-profiling;democratie;scintigraphie3";coenergy
-
-Louis Barthelemy;"democratie;keolis-autonomie;engie-profiling;scintigraphie1;pictet-trading-strategie";friend-concept
-
-Stephanie Bellini;"cbio-visu;puzzle;vieillissement-mouche;keolis-autonomie;kleep";e-cube-linky
-
-Gael Bigot;"pictet-trading-strategie;chu-centrale-appel;engie-profiling;glaciaire;methane2";mines-paris
-
-Louis Bindel;"MDE-réseau-qgis;glaciaire;keolis-autonomie;MDE-réseau-qgis;methane1";germain-maureau
-
-Denis Bonnand;"engie-profiling;methane1;democratie;alumni-identifiant;coenergy";kleep
-
-Fiona Bonnefoy Cudraz;"pictet-forecasting;jaugeages;cbio-visu;jaugeages;scintigraphie1";sursaut-gamma
-
-Mattis Borderies;"democratie;methane1;scanner-low-cost;methane2;engie-profiling";engie-profiling
-
-Simon Boudara;"methane1;germain-maureau;sursaut-gamma;jaugeages;cristal";engie-actif
-
-Louis Boulay;"sursaut-gamma;scintigraphie3;coenergy;kleep;cbio-visu";cbio-visu
-
-Quentin Bouquet;"engie-profiling;friend-concept;MDE-réseau-qgis;scintigraphie3;pictet-trading-strategie";keolis-offre
-
-Antoine BdlR;"scintigraphie2;methane1;cbio-visu;pictet-trading-strategie;datapred";keolis-autonomie
-
-Charlotte Bourny;"engie-actif;democratie;datapred;datapred;democratie";scintigraphie3
-
-Julie Boyer;"montchauvel;scanner-low-cost;keolis-offre;resan-tracabilité;ocde-empreinte";datapred
-
-Esther Braconnier;"MDE-réseau-qgis;germain-maureau;germain-maureau;coenergy;scintigraphie3";alumni-identifiant
+;;
+David Abulius;"glaciaire;engie-profiling;datapred;scintigraphie1;mines-paris";glaciaire
+;;
+Valentin Allard;"cbio-visu;keolis-offre;germain-maureau;vieillissement-mouche;vieillissement-mouche";jaugeages
+;;
+Amine Amzai;"methane2;keolis-autonomie;democratie;cristal;mines-paris";montchauvel
+;;
+Gaspard Aractingi;"mines-paris;chu-centrale-appel;montchauvel;friend-concept;e-cube-linky";MDE-réseau-qgis
+;;
+Nejma Araki;"puzzle;alumni-identifiant;chu-centrale-appel;e-cube-linky;e-cube-linky";democratie
+;;
+Baptiste Auscher;"keolis-autonomie;friend-concept;glaciaire;puzzle;scintigraphie3";resan-tracabilité
+;;
+Madeleine Banessy;"resan-tracabilité;ocde-empreinte;pictet-trading-strategie;montchauvel;datapred";scintigraphie1
+;;
+Mathis Bardot;"sursaut-gamma;ocde-empreinte;engie-profiling;engie-profiling;montchauvel";scintigraphie2
+;;
+Yannis Baron;"ocde-empreinte;methane1;cbio-visu;chu-centrale-appel;pictet-trading-strategie";coenergy
+;;
+Louis Barthelemy;"friend-concept;methane1;methane2;coenergy;germain-maureau";friend-concept
+;;
+Stephanie Bellini;"e-cube-linky;coenergy;mines-paris;ocde-empreinte;scintigraphie2";e-cube-linky
+;;
+Gael Bigot;"chu-centrale-appel;cristal;cristal;methane2;ocde-empreinte";mines-paris
+;;
+Louis Bindel;"scanner-low-cost;scintigraphie2;MDE-réseau-qgis;keolis-autonomie;keolis-autonomie";germain-maureau
+;;
+Denis Bonnand;"alumni-identifiant;friend-concept;engie-actif;cbio-visu;chu-centrale-appel";kleep
+;;
+Fiona Bonnefoy Cudraz;"engie-profiling;cbio-visu;engie-actif;montchauvel;kleep";sursaut-gamma
+;;
+Mattis Borderies;"chu-centrale-appel;keolis-autonomie;keolis-offre;mines-paris;resan-tracabilité";engie-profiling
+;;
+Simon Boudara;"scintigraphie2;cbio-visu;scintigraphie2;kleep;kleep";engie-actif
+;;
+Louis Boulay;"scintigraphie1;vieillissement-mouche;puzzle;ocde-empreinte;pictet-forecasting";cbio-visu
+;;
+Quentin Bouquet;"sursaut-gamma;scintigraphie1;scintigraphie1;engie-profiling;puzzle";keolis-offre
+;;
+Antoine BdlR;"germain-maureau;methane2;coenergy;methane1;ocde-empreinte";keolis-autonomie
+;;
+Charlotte Bourny;"chu-centrale-appel;pictet-trading-strategie;coenergy;puzzle;keolis-autonomie";scintigraphie3
+;;
+Julie Boyer;"datapred;germain-maureau;scanner-low-cost;glaciaire;cristal";datapred
+;;
+Esther Braconnier;"keolis-offre;vieillissement-mouche;mines-paris;friend-concept;e-cube-linky";alumni-identifiant
+;;
+Salomet Brichet;"keolis-autonomie;cbio-visu;friend-concept;sursaut-gamma;engie-profiling";puzzle
+;;
+Dorian Brousse;"ocde-empreinte;friend-concept;scintigraphie2;e-cube-linky;keolis-offre";methane1
+;;
+Ombline Brunet;"scintigraphie1;resan-tracabilité;scintigraphie2;kleep;alumni-identifiant";methane2
+;;
+Louis Brusset;"chu-centrale-appel;scintigraphie2;resan-tracabilité;germain-maureau;ocde-empreinte";ocde-empreinte
+;;
+Antoine Campos;"coenergy;puzzle;cristal;sursaut-gamma;chu-centrale-appel";chu-centrale-appel
+;;
+Mila Chabassier;"pictet-forecasting;cbio-visu;democratie;vieillissement-mouche;germain-maureau";pictet-trading-strategie
+;;
+Cyrianne Chabert;"engie-actif;glaciaire;datapred;scintigraphie2;kleep";pictet-forecasting
+;;
+Aria Chafai;"vieillissement-mouche;engie-actif;engie-profiling;methane2;alumni-identifiant";vieillissement-mouche
+;;
+Alice Chakroun;"keolis-autonomie;vieillissement-mouche;methane1;scintigraphie1;kleep";scanner-low-cost
+;;
+Antoine Chapelant;"keolis-autonomie;engie-actif;glaciaire;glaciaire;jaugeages";cristal
+;;
+Benoit Charron;"keolis-autonomie;engie-actif;engie-actif;keolis-offre;scintigraphie3";
+;;
+Marion Chatard;"democratie;friend-concept;chu-centrale-appel;methane2;montchauvel";
+;;
+Axel Chaumel;"alumni-identifiant;engie-profiling;democratie;pictet-trading-strategie;ocde-empreinte";
+;;
+Ilias Cherrat;"coenergy;alumni-identifiant;friend-concept;resan-tracabilité;cbio-visu";
+;;
+AUrélie Chopard;"democratie;methane2;democratie;datapred;MDE-réseau-qgis";
+;;
+Maxime Clergé;"engie-actif;methane2;coenergy;puzzle;sursaut-gamma";
+;;
+Matti Comba;"keolis-offre;MDE-réseau-qgis;chu-centrale-appel;datapred;montchauvel";
+;;
+Agathe Cotte;"methane1;chu-centrale-appel;jaugeages;germain-maureau;cristal";
+;;
+Esteban Daude;"MDE-réseau-qgis;methane2;mines-paris;keolis-autonomie;mines-paris";
+;;
+Maxime De Bussac;"methane2;engie-profiling;germain-maureau;alumni-identifiant;resan-tracabilité";
+;;
+Claire De Saint Méloir;"engie-profiling;glaciaire;cristal;pictet-forecasting;resan-tracabilité";
+;;
+Lise Dépinay;"scintigraphie1;keolis-offre;mines-paris;ocde-empreinte;pictet-trading-strategie";
+;;
+Valentin Deumier;"keolis-offre;methane2;methane2;engie-profiling;scintigraphie1";
+;;
+Colin Drouineau;"resan-tracabilité;keolis-offre;glaciaire;alumni-identifiant;chu-centrale-appel";
+;;
+Alban Dujardin;"friend-concept;sursaut-gamma;kleep;cbio-visu;sursaut-gamma";
+;;
+Lilian Dupouy;"democratie;mines-paris;chu-centrale-appel;methane1;ocde-empreinte";
+;;
+Guillaume Duveau;"pictet-forecasting;alumni-identifiant;scintigraphie2;datapred;cristal";
+;;
+Simpson Eng;"montchauvel;engie-profiling;puzzle;engie-profiling;scintigraphie1";
+;;
+Pierre Escudie;"scintigraphie3;alumni-identifiant;cbio-visu;jaugeages;mines-paris";
+;;
+Augustin Ferrey;"scintigraphie2;jaugeages;democratie;cbio-visu;resan-tracabilité";
+;;
+Liam Feve;"alumni-identifiant;puzzle;jaugeages;datapred;pictet-trading-strategie";
+;;
+Antoine Fondeur;"puzzle;e-cube-linky;engie-profiling;cbio-visu;methane1";
+;;
+Olivier Fondeur;"sursaut-gamma;mines-paris;datapred;cristal;engie-actif";
+;;
+Achille Fruchard;"alumni-identifiant;vieillissement-mouche;cristal;mines-paris;cbio-visu";
+;;
+Emeric Gandon;"methane2;resan-tracabilité;friend-concept;glaciaire;scintigraphie2";
+;;
+Anne Gabrielle Gibeili;"MDE-réseau-qgis;sursaut-gamma;montchauvel;montchauvel;pictet-trading-strategie";
+;;
+Tom Graciet;"chu-centrale-appel;democratie;resan-tracabilité;pictet-forecasting;methane2";
+;;
+Mathis Grillot;"keolis-autonomie;sursaut-gamma;keolis-offre;puzzle;scintigraphie3";
+;;
+Eleonore Grison;"cbio-visu;pictet-trading-strategie;engie-actif;ocde-empreinte;scintigraphie1";
+;;
+Clément Herve;"pictet-forecasting;methane2;engie-actif;scintigraphie1;cristal";
+;;
+Vincent Heynderickx;"cristal;datapred;kleep;e-cube-linky;montchauvel";
+;;
+Nicolas Houbouyan;"resan-tracabilité;keolis-autonomie;pictet-trading-strategie;democratie;methane1";
+;;
+Donatien Houitte de la Chesnais;"e-cube-linky;puzzle;ocde-empreinte;scanner-low-cost;keolis-autonomie";
+;;
+Camille Hua;"methane1;sursaut-gamma;keolis-autonomie;kleep;keolis-offre";
+;;
+Gwenaelle Hulard;"scintigraphie2;keolis-offre;cbio-visu;cristal;pictet-trading-strategie";
+;;
+Jules Imbert;"MDE-réseau-qgis;keolis-autonomie;coenergy;scintigraphie3;scintigraphie1";
+;;
+Francois Jamet;"puzzle;montchauvel;glaciaire;cristal;engie-profiling";
+;;
+Eric Kabis de St Chamas;"keolis-offre;puzzle;mines-paris;ocde-empreinte;datapred";
+;;
+Jules Lagarde;"chu-centrale-appel;scintigraphie3;pictet-forecasting;methane1;democratie";
+;;
+Antoine Laumonier;"scintigraphie2;sursaut-gamma;engie-actif;glaciaire;engie-actif";
+;;
+Lucas le Gall;"keolis-autonomie;resan-tracabilité;vieillissement-mouche;scanner-low-cost;jaugeages";
+;;
+Pacome Lefebvre;"scanner-low-cost;scintigraphie1;engie-profiling;engie-actif;keolis-autonomie";
+;;
+Julie Leon;"ocde-empreinte;mines-paris;keolis-offre;ocde-empreinte;engie-profiling";
+;;
+Titouan Lestanguet;"scintigraphie2;resan-tracabilité;jaugeages;puzzle;scanner-low-cost";
+;;
+Hannah Levallois;"MDE-réseau-qgis;cristal;germain-maureau;vieillissement-mouche;alumni-identifiant";
+;;
+Lea Llinas;"glaciaire;glaciaire;mines-paris;scanner-low-cost;jaugeages";
+;;
+Yanis Marmier;"pictet-forecasting;e-cube-linky;germain-maureau;mines-paris;methane2";
+;;
+Orel Mazor;"democratie;friend-concept;mines-paris;vieillissement-mouche;scanner-low-cost";
+;;
+Timon Mesgouez;"germain-maureau;keolis-autonomie;resan-tracabilité;puzzle;keolis-offre";
+;;
+Neil Mikou;"kleep;pictet-forecasting;pictet-trading-strategie;friend-concept;keolis-autonomie";
+;;
+Luca Morabito;"scintigraphie2;methane1;resan-tracabilité;MDE-réseau-qgis;scintigraphie3";
+;;
+Sioban Nieradzik-Kozic;"keolis-offre;methane1;mines-paris;keolis-autonomie;scanner-low-cost";
+;;
+Alexandre Noel;"montchauvel;scintigraphie2;ocde-empreinte;friend-concept;puzzle";
+;;
+Raphael Oculi;"engie-actif;cristal;coenergy;kleep;kleep";
+;;
+Taha Oulhazzan;"democratie;cristal;friend-concept;keolis-autonomie;keolis-offre";
+;;
+Emeline Padie;"keolis-offre;democratie;vieillissement-mouche;pictet-trading-strategie;coenergy";
+;;
+Justine Paleotti;"pictet-forecasting;engie-profiling;datapred;scintigraphie1;pictet-trading-strategie";
+;;
+Aymeric Papon;"ocde-empreinte;cristal;datapred;cbio-visu;ocde-empreinte";
+;;
+Benjamin Parent;"engie-profiling;scanner-low-cost;engie-profiling;montchauvel;MDE-réseau-qgis";
+;;
+Gabriel Patry;"MDE-réseau-qgis;chu-centrale-appel;scintigraphie2;scintigraphie2;scintigraphie3";
+;;
+Mathis Peinaud;"jaugeages;keolis-offre;montchauvel;sursaut-gamma;pictet-forecasting";
+;;
+Gaspard Pereira;"methane2;pictet-trading-strategie;keolis-autonomie;chu-centrale-appel;pictet-trading-strategie";
+;;
+Romain Perrin;"keolis-offre;cbio-visu;mines-paris;sursaut-gamma;e-cube-linky";
+;;
+Louis Philibert Nicol;"e-cube-linky;scanner-low-cost;puzzle;sursaut-gamma;e-cube-linky";
+;;
+Baptiste Piar;"friend-concept;MDE-réseau-qgis;mines-paris;germain-maureau;scintigraphie2";
+;;
+Paul Picard;"resan-tracabilité;cbio-visu;keolis-offre;methane2;keolis-offre";
+;;
+Antonin Piechczyk;"scintigraphie1;kleep;MDE-réseau-qgis;democratie;engie-profiling";
+;;
+Raphael Pietravalle;"puzzle;keolis-autonomie;scanner-low-cost;engie-actif;chu-centrale-appel";
+;;
+Marianne Pinault;"methane1;engie-profiling;scintigraphie1;jaugeages;germain-maureau";
+;;
+Raphael Poux;"mines-paris;resan-tracabilité;methane2;glaciaire;datapred";
+;;
+Camille Prigent;"keolis-offre;engie-actif;montchauvel;ocde-empreinte;montchauvel";
+;;
+Clara Pruneau;"chu-centrale-appel;keolis-offre;engie-actif;engie-actif;resan-tracabilité";
+;;
+Nathan Rapin;"ocde-empreinte;pictet-trading-strategie;vieillissement-mouche;ocde-empreinte;vieillissement-mouche";
+;;
+Fatima Rharbal;"scintigraphie1;methane1;ocde-empreinte;scanner-low-cost;scintigraphie3";
+;;
+Benjamin Rivet;"cbio-visu;pictet-forecasting;alumni-identifiant;germain-maureau;kleep";
+;;
+Gregor Roncin;"pictet-trading-strategie;scintigraphie1;scintigraphie2;chu-centrale-appel;cristal";
+;;
+Enak Roubertie;"alumni-identifiant;democratie;democratie;datapred;scanner-low-cost";
+;;
+Marc Samba;"e-cube-linky;germain-maureau;cbio-visu;engie-profiling;scintigraphie1";
+;;
+Adelie Saule;"scintigraphie1;ocde-empreinte;scintigraphie3;resan-tracabilité;chu-centrale-appel";
+;;
+Noemie Sauvage;"e-cube-linky;datapred;friend-concept;methane2;keolis-autonomie";
+;;
+Tom Schippke;"pictet-forecasting;pictet-trading-strategie;keolis-offre;jaugeages;e-cube-linky";
+;;
+Guillaume Setti;"methane1;democratie;jaugeages;mines-paris;cristal";
+;;
+Elisa Skowronek;"cristal;jaugeages;alumni-identifiant;resan-tracabilité;methane1";
+;;
+Samy Smail;"vieillissement-mouche;vieillissement-mouche;montchauvel;cbio-visu;germain-maureau";
+;;
+Martin Sterin;"scintigraphie1;democratie;ocde-empreinte;scintigraphie1;puzzle";
+;;
+Romain Teissandier;"democratie;datapred;pictet-trading-strategie;pictet-trading-strategie;glaciaire";
+;;
+Thomas Ternisien;"methane1;glaciaire;resan-tracabilité;germain-maureau;MDE-réseau-qgis";
+;;
+Mathieu Toscano;"chu-centrale-appel;scintigraphie1;alumni-identifiant;scanner-low-cost;vieillissement-mouche";
+;;
+Lucie Trolle;"sursaut-gamma;scintigraphie2;resan-tracabilité;engie-actif;resan-tracabilité";
+;;
+Chloe Vagner;"coenergy;friend-concept;montchauvel;sursaut-gamma;cbio-visu";
+;;
+Mathis Verdan;"vieillissement-mouche;vieillissement-mouche;keolis-offre;methane1;glaciaire";
+;;
+Gabriel Vibert;"glaciaire;engie-actif;vieillissement-mouche;methane1;resan-tracabilité";
+;;
+Benoit Vogel;"friend-concept;democratie;e-cube-linky;scintigraphie1;friend-concept";
+;;
+Yanis Yarhzou;"resan-tracabilité;cbio-visu;coenergy;coenergy;pictet-trading-strategie";
+;;
+Francois Yvetot;"datapred;friend-concept;scintigraphie1;scanner-low-cost;methane2";
+;;
+paulo lasticot;"glaciaire;jaugeages;puzzle;mont chauvel;democratie";
+;;
+Parmentelat Thierry;"jaugeages;glaciaire;cristal;sursaut-gamma;mont chauvel";
